@@ -1,0 +1,179 @@
+body {
+  background-image: url('bg disney.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/* Style Header */
+.header{
+    background-color: rgb(255, 161, 161);
+    padding:20px;
+    text-align:center;
+    font-size: large;
+}
+/* Style untuk menu /topnav */
+.topnav{
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+/* style untuk menu/topnax link */
+.topnav a{
+    float:left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* JUDUL  */
+h1 {
+  background-color: rgb(250, 242, 242);
+  color: rgb(225, 117, 117);
+  text-align: center;
+  padding: 12px;
+  display: inline-block;        
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;          
+  transition: all 0.3s ease;
+}
+
+h1:hover {
+  color: #ff3366;               
+  background-color: #ffffff;    
+  transform: scale(1.08);       
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+}
+
+h2 {
+  background-color: rgb(201, 137, 214);
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 0;                
+  margin-bottom: 20px;          
+}
+
+/* Box Pembatas Utama  */
+.Wisata {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9); 
+  box-sizing: border-box;
+}
+
+.Wisata .content {
+  display: flex !important;
+  gap: 15px;
+  overflow-x: auto !important;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Wisata .card {
+  flex: 0 0 250px !important;
+  width: 250px;
+  height: 250px;
+}
+
+.Wisata .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Wisata .card img:hover {
+  transform: translateY(-6px);              /* Gambar terangkat sedikit ke atas */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35); /* Efek bayangan lebih tegas */
+  cursor: pointer;
+}
+
+.Wisata .content::-webkit-scrollbar {
+  height: 8px;
+}
+.Wisata .content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.Wisata .content::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+.artikel-box {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto 40px auto;
+  background-color: rgba(255, 255, 255, 0.92);
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.artikel-box h3 {
+  text-align: center;
+  color: #b33969;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.artikel-box p {
+  text-indent: 45px;           
+  text-align: justify;         
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#falling-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+/* Elemen gambar Mickey yang jatuh */
+.mickey-item {
+  position: absolute;
+  top: -60px;
+  user-select: none;
+  animation: fall linear infinite;
+}
+/* Animasi gerakan jatuh */
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(105vh) rotate(360deg);
+    opacity: 0.3;
+  }
+}
+
+/* Menyembunyikan pemutar audio agar bersih */
+audio {
+    display: none;
+}

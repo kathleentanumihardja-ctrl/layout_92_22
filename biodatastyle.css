@@ -1,0 +1,336 @@
+body{
+    background-image: url(bgggggg.jpg);
+    background-size: over;
+    background-position: center;
+}
+
+/* JUDUL */
+h2{background-color: rgb(255, 144, 144);
+color:white;
+text-align:center;
+padding:8px}
+
+h3{background-color: rgb(255, 144, 144);
+color:white;
+text-align:center;
+padding:8px}
+
+h4{background-color: rgb(255, 144, 144);
+color:white;
+text-align:center;
+padding:8px}
+
+h5{background-color: rgb(255, 144, 144);
+color:white;
+text-align:center;
+padding:8px}
+
+h1{background-color: hotpink;
+color:aqua;
+text-align:center;
+padding:8px}
+
+
+/*BOX BIODATA*/
+div.biodata{margin: 30px auto;
+width: 70%;
+background-color: rgb(255, 253, 105);
+color:rgb(255, 0, 157);
+padding:30px;
+border-radius: 12px;}
+
+/*ISI BIODATA*/
+div.content{display:flex;
+align-items: center;
+justify-content: center;
+gap:30px;}
+
+/*FOTO*/
+div.foto img{
+    width: 200px;
+    height: 250px;
+    
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(255, 118, 230);
+}
+
+
+div.foto img:hover{
+width: 200px;
+height: 250px;
+object-fit: cover;
+object-position: center;
+transition: transform 0.5s ease, opacity 0.5 ease;
+border-radius: 12px;
+content:url(foto\ kecil\ .jpeg)}
+
+
+
+
+/*GAMBAR*/
+img{border-radius: 25px 25px 0px 0px;}
+
+/* BANNER MAKANAN */
+p.judul{background-color:hotpink;
+text-align: center;
+width: 100%;
+margin: 30px auto 20px;
+padding: 10px;
+border-radius: 0;
+font-size: 30px;}
+
+div.makanan{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+
+}
+    
+img{
+    padding: 10px;
+}
+div.steak{
+    width: 250px;
+    height:280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96,56,56,0.9);
+    color: rgb(0, 0, 0);
+    text-align : center;
+    background-color:  rgb(255, 237, 80);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.steak:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color:hotpink;
+}
+
+
+div.mcflurry{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96,56,56,0.9);
+    color: rgb(0, 0, 0);
+    text-align : center;
+    background-color:  rgb(255, 237, 80);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.mcflurry:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color: hotpink;
+}
+div.Pasta{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96,56,56,0.9);
+    color: rgb(0, 0, 0);
+    text-align : center;
+    background-color:  rgb(255, 237, 80);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.Pasta:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color: hotpink;
+}
+
+div.series{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+
+}
+    
+img{
+    padding: 10px;
+}
+div.Brooklyn99{
+    width: 250px;
+    height:280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96,56,56,0.9);
+    color: rgb(0, 0, 0);
+    text-align : center;
+    background-color:  rgb(255, 237, 80);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.Brooklyn99:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: rgb(158, 255, 223);
+    transform: scale(1.1);
+}
+
+
+div.ModernFamily{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96,56,56,0.9);
+    color: rgb(0, 0, 0);
+    text-align : center;
+    background-color:  rgb(255, 237, 80);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.ModernFamily:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+     background-color: rgb(158, 255, 223);
+}
+div.HIMYM{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96,56,56,0.9);
+    color: rgb(0, 0, 0);
+    background-color:  rgb(255, 237, 80);
+    text-align : center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.HIMYM:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+     background-color: rgb(158, 255, 223);
+}
+
+div.Artis{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+
+}
+    
+img{
+    padding: 10px;
+}
+div.OliviaRodrigo{
+    width: 250px;
+    height:280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96,56,56,0.9);
+    color: rgb(0, 0, 0);
+    text-align : center;
+    background-color: rgb(255, 237, 80);;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.OliviaRodrigo:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color:  darkseagreen;;
+}
+
+
+div.MichaelJackson{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96,56,56,0.9);
+    color: rgb(0, 0, 0);
+    text-align : center;
+    background-color: rgb(255, 237, 80);;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.MichaelJackson:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color:  darkseagreen;;
+}
+div.OliviaDean{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96,56,56,0.9);
+    color: rgb(0, 0, 0);
+    text-align : center;
+    background-color: rgb(255, 237, 80);;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.OliviaDean:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color:  darkseagreen;;
+}
+
+div.Minuman{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+
+}
+    
+img{
+    padding: 10px;
+}
+div.boba{
+    width: 250px;
+    height:280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96,56,56,0.9);
+    color: rgb(0, 0, 0);
+    text-align : center;
+    background-color: rgb(255, 237, 80);;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.boba:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color:  rgb(248, 165, 242);;
+}
+
+
+div.matcha{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96,56,56,0.9);
+    color: rgb(0, 0, 0);
+    text-align : center;
+    background-color: rgb(255, 237, 80);;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.matcha:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color: rgb(248, 165, 242);;
+}
+div.chocomilk{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96,56,56,0.9);
+    color: rgb(0, 0, 0);
+    text-align : center;
+    background-color: rgb(255, 237, 80);;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.chocomilk:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color: rgb(248, 165, 242);;
+}

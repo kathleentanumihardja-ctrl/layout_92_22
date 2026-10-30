@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+/* Style Header */
+.header{
+    background-color: rgb(255, 161, 161);
+    padding:20px;
+    text-align:center;
+    font-size: 50px;
+}
+/* Style untuk menu /topnav */
+.topnav{
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+/* style untuk menu/topnax link */
+.topnav a{
+    float:left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: cornsilk;
+    color: brown;
+}
+.column{
+    float: left;
+    padding: 10px;
+}
+.column.side{
+    width: 25%;
+}
+.column.middle{
+    width: 50%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    background-color: rgb(165, 233, 165);
+    text-align: center;
+}
+
+table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+}

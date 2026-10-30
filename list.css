@@ -1,0 +1,118 @@
+
+
+body{
+    margin:0;
+}
+/* Style Header */
+.header{
+    background-color: rgb(255, 254, 254);
+    padding:20px;
+    text-align:center;
+    font-size: 50px;
+}
+/* Style untuk menu /topnav */
+.topnav{
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+/* style untuk menu/topnax link */
+.topnav a{
+    float:left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: cornsilk;
+    color: brown;
+}
+/* Konten Utama */
+.main-content {
+    padding: 20px;
+}
+
+/* --- Styling Kotak  --- */
+.box-section {
+    background-color: #E9967A;
+    border: 2px solid #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.box-section h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* --- LIST BUAH-BUAHAN --- */
+.list-buah {
+    list-style-type: upper-roman; /* Angka Romawi I, II, III... */
+    border: 8px solid #8A2BE2;   /* Border ungu tebal */
+    padding: 10px 10px 10px 40px;
+    margin: 0;
+}
+
+.list-buah li {
+    background-color: #ADFF2F; /* Hijau muda */
+    border: 1px solid #7F00FF;
+    padding: 6px 10px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.list-buah li.highlight {
+    background-color: #D2691E; /* Warna cokelat / oranye */
+}
+
+/* --- BAGIAN 2: LOREM IPSUM --- */
+.list-lorem {
+    list-style-type: square;    /* Bullet bentuk kotak */
+    border: 5px solid #5F9EA0;   /* Border hijau toska */
+    padding: 10px 10px 10px 30px;
+    margin: 0;
+}
+
+.list-lorem li {
+    background-color: #FFC0CB; /* Warna pink muda */
+    border: 1px solid #778899;
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+/* --- MACAM-MACAM ICON --- */
+.list-icon {
+    list-style-type: square;    /* Bullet bentuk kotak */
+    border: 5px solid #5F9EA0;   /* Border hijau toska */
+    padding: 10px 10px 10px 30px;
+    margin: 0;
+}
+
+.list-icon li {
+    background-color: #FFFF00; /* Warna kuning */
+    border: 1px solid #3CB371;
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.list-icon i {
+    margin-right: 6px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

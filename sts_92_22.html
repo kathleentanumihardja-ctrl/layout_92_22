@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head> 
+    <title>Tokyo Disneyland</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sts_92_22.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <!-- Membuat Header -->
+        <div class="header">
+            <h6>HEADER</h6>
+        </div>
+        <!-- Membuat menu/navigator bar -->
+         <div class="topnav">
+            <a href="index.html">Biodata</a>
+            <a href="table1.html">Table</a>
+            <a href="list.html">List</a>
+            <a href="sts_92_22.html">STS</a>
+         </div>
+<center>
+  <h1 class="judul-utama">Tokyo DisneyLand, Where Dreams Come True</h1>
+  <h2>By: Kathleen 92/22 </h2>
+</center>
+
+    <!-- BOX WISATA  -->
+    <div class="Wisata"> 
+      <div class="content">
+        <div class="card">
+          <img src="tokyo disney entrence.jpg" alt="entrance">
+        </div>
+        <div class="card">
+          <img src="toy story.jpg" alt="toy story"> 
+        </div>
+        <div class="card">
+          <img src="tinker.jpg" alt="tinkerbelle">
+        </div>
+        <div class="card">
+          <img src="tea paerty.jpg" alt="teaparty"> 
+        </div>
+        <div class="card">
+          <img src="best ride ever.jpg" alt="beautybeast">
+        </div>
+        <div class="card">
+          <img src="disney cast;e.jpg" alt="disneycastle">
+        </div>
+      </div> 
+    </div>
+
+    <!-- BOX ARTIKEL  -->
+    <div class="artikel-box">
+      <h3>Mengenal Lebih Dekat Keajaiban Tokyo Disneyland</h3>
+      <p>
+        Tokyo Disneyland adalah taman hiburan bertema Disney pertama yang dibangun di luar Amerika Serikat. Resmi dibuka pada tanggal 15 April 1983, taman rekreasi ikonik ini dikelola oleh Oriental Land Company dengan lisensi resmi dari The Walt Disney Company. Terletak di Urayasu, Chiba, Jepang, destinasi impian ini menawarkan pengalaman magis yang memadukan kehangatan budaya keramahan Jepang dengan atmosfer dunia dongeng klasik Disney yang dicintai oleh jutaan pengunjung dari berbagai belahan dunia setiap tahunnya. Sejak pertama kali beroperasi, tempat ini telah menjelma menjadi simbol kebahagiaan universal yang tidak pernah kehilangan daya tarik magisnya bagi anak-anak maupun orang dewasa.
+      </p>
+      <p>
+        Kompleks megah seluas lebih dari 46 hektar ini terbagi menjadi beberapa area tematik utama yang masing-masing menawarkan keunikan tersendiri. World Bazaar menyambut para pengunjung dengan deretan bangunan bergaya toko-toko Amerika awal abad ke-20 yang dipenuhi pernak-pernik eksklusif. Berjalan sedikit lebih jauh, pengunjung dapat merasakan petualangan seru di Adventureland, menjelajahi misteri masa lalu di Westernland, menikmati keseruan dunia kartun yang penuh warna di Toontown, hingga merasakan kemegahan masa depan di Tomorrowland. Di pusat seluruh area berdiri dengan gagah Cinderella Castle yang menjadi lambang keindahan sekaligus titik sentral dari seluruh keajaiban arsitektur yang ada di dalam kawasan taman hiburan ini.
+      </p>
+      <p>
+        Selain menawarkan berbagai wahana permainan kelas dunia yang memacu adrenalin maupun wahana santai yang ramah keluarga, Tokyo Disneyland juga terkenal dengan rangkaian pertunjukan langsung dan parade spektakulernya. Parade siang hari yang meriah selalu menampilkan karakter-karakter kesayangan seperti Mickey Mouse, Donald Duck, dan Disney Princess dalam balutan kostum gemerlap diiringi musik yang ceria. Sementara itu, pada malam hari, langit di atas kastil akan diterangi oleh pertunjukan kembang api megah yang berpadu dengan proyeksi cahaya canggih, menciptakan atmosfer malam yang benar-benar romantis dan sulit dilupakan oleh siapapun yang menyaksikannya.
+      </p>
+      <p>
+        Berwisata ke Tokyo Disneyland bukan sekadar menikmati wahana permainan, melainkan sebuah pengalaman emosional yang menghidupkan kembali memori masa kecil. Perhatian terhadap detail kebersihan, keramahan para staf yang dikenal dengan sebutan Cast Members, serta inovasi wahana baru yang terus dihadirkan, seperti area bertema Beauty and the Beast yang menakjubkan, menjadikan destinasi ini selalu terasa segar di setiap kunjungan. Dengan segala keajaiban, tata kelola profesional, dan atmosfer kebahagiaan yang melingkupinya, Tokyo Disneyland akan terus berdiri kokoh sebagai tempat di mana mimpi-mimpi indah benar-benar menjadi kenyataan bagi setiap jiwa yang datang berkunjung.
+      </p>
+    </div>
+
+    <div id="falling-container"></div>
+
+    <!-- Audio Background  -->
+    <audio id="bg-music" loop>
+      <source src="When You Wish Upon A Star (1).mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+      function createMickey() {
+        const container = document.getElementById('falling-container');
+        const img = document.createElement('img');
+        
+        img.src = 'mickey head.png'; 
+        img.classList.add('mickey-item');
+        
+        img.style.left = Math.random() * 100 + 'vw';
+        
+        const size = Math.random() * 30 + 30;
+        img.style.width = size + 'px';
+        img.style.height = 'auto';
+        
+        const duration = Math.random() * 4 + 4;
+        img.style.animationDuration = duration + 's';
+
+        container.appendChild(img);
+
+        setTimeout(() => {
+          img.remove();
+        }, duration * 1000);
+      }
+
+      setInterval(createMickey, 400);
+
+      document.addEventListener('click', function() {
+        const music = document.getElementById('bg-music');
+        if (music.paused) {
+          music.play().catch(error => {
+            console.log("Autoplay dicegah browser:", error);
+          });
+        }
+      }, { once: true });
+    </script>
+
+</body>
+</html>

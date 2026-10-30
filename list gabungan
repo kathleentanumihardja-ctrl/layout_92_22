@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>orderlist dan Unorderlist</title>
+        <style>
+            ul{
+                list-style-type: circle;
+            }
+            ol.a{
+                list-style: lower-alpha;
+            }
+            ol.li{
+                background-color: rgb(255, 131, 197);
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Menu Makanan dan minuman</h2>
+     <p>Makanan</p>
+     <ol>
+        <li>MCD</li>
+        <ul>
+            <li>Kentang Goreng</li>
+        </ul>
+        <li>KFC</li>
+        <ol class="a">
+            <li>Kentang Goreng</li>
+        </ol>
+        <li>Nasi Goreng</li>
+     </ol>
+     <p>Minuman</p>
+     <ul>
+        <li>Sprite</li>
+        <li>Air Putih</li>
+        <li>Jus</li>
+     </ul>
+     <h2>Icon pada HTML</h2>
+     <li i class="fa-solid fa-camera"></li>
+    
+    </body>
+</html>
